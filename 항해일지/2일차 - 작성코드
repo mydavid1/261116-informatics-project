@@ -1,0 +1,15 @@
+import math
+
+a1 = float(input('a1'))
+b1 = float(input('b1'))
+a2 = float(input('a2'))
+b2 = float(input('b2'))
+
+Xmin = math.ceil(float(input('정의역 최소')))
+Xmax = math.floor(float(input('정의역 최대')))
+
+cnt = 0
+
+for i in range(Xmin,Xmax) :
+    cnt = cnt + ((a2-a1)*i+(b2-b1))
+print(cnt)
