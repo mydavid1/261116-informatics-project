@@ -1,0 +1,17 @@
+import numpy as np
+
+a = input('함수를 입력하세요')
+b = input('두 번째 함수를 입력하세요')
+x_min = int(input('하한'))
+x_max = int(input('상한'))
+
+cnt = 0
+
+for x in range(x_min,x_max+1) :
+
+    if eval(a) - eval(b) >= 0 :
+        cnt += int(eval(a) - eval(b))
+    else : 
+        cnt -= int(eval(a) - eval(b))
+       
+print(cnt)
