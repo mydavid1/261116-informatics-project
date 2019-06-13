@@ -1,0 +1,37 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+a = input('함수를 입력하세요')
+
+x_min = input('하한')
+x_max = input('상한')
+
+dot_x = []
+dot_y = []
+
+ar1_x = np.arange(int(x_min), int(x_max), 0.1)
+ar1_x[-1] = int(x_max)
+ar1_y = []
+
+for i in ar1_x :
+    x = i
+    f = eval(a)
+    ar1_y.append(f)
+    
+    f = int(f)
+    
+    if f>=0 :
+        for j in range(f+1) :
+            dot_x.append(int(i))
+            dot_y.append(j)
+    else:    
+        for j in range(f,1) :            
+            dot_x.append(int(i))
+            dot_y.append(j)
+cnt = 0
+for k in dot_x :
+    plt.scatter(k, dot_y[cnt], color = 'r')
+    cnt = cnt + 1
+plt.plot(ar1_x,ar1_y)
+plt.show()
+print(cnt)
