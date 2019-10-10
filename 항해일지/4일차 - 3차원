@@ -3,6 +3,7 @@ x_max = int(input('상한'))
 y_min = int(input('하한'))
 y_max = int(input('상한'))
 
+#두개의 평면을 ax+by+cz+d=0의 형태로 만들어주기 위해 계수들을 입력받는다.
 a1 = float(input('a1'))
 b1 = float(input('b1'))
 c1 = float(input('c1'))
@@ -12,6 +13,8 @@ b2 = float(input('b2'))
 c2 = float(input('c2'))
 d2 = float(input('d2'))
 
+#cnt 로 하나의 (x,y)값에 대해 두 평면 사이 격자점의 수를 저장한다.
+#z = (a*x + b*y + d)/-c 를 이용한 것이다.
 cnt = 0
 for i in range(x_min,x_max+1) :
     for j in range(y_min,y_max+1) :
