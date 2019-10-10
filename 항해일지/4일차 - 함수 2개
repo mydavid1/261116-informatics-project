@@ -8,7 +8,7 @@ x_max = int(input('상한'))
 cnt = 0
 
 for x in range(x_min,x_max+1) :
-#eval 함수의 기능 : input 되어 들어온 문자열을 함수로 바꿔 준다. 
+#eval 함수의 기능 : input 되어 들어온 문자열을 파이썬에서 인식 가능한 컴파일 코드로 바꿔 준다. 따라서 함수로의 기능을 할 수 있게 된다. 
 
     if eval(a) - eval(b) >= 0 :
         cnt += int(eval(a) - eval(b))
