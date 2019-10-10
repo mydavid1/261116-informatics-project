@@ -8,6 +8,7 @@ x_max = int(input('상한'))
 cnt = 0
 
 for x in range(x_min,x_max+1) :
+#eval 함수의 기능 : input 되어 들어온 문자열을 함수로 바꿔 준다. 
 
     if eval(a) - eval(b) >= 0 :
         cnt += int(eval(a) - eval(b))
